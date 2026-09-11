@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bayyina"
+version = "0.9.0"
+description = "Evidence-based third-party vendor assurance for government procurement"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "Apache-2.0" }
+authors = [{ name = "Bayyina team" }]
+
+# Deliberately ZERO required runtime dependencies.
+# The whole assessment, scoring and reporting pipeline runs on the Python
+# standard library so that a juror can reproduce it on a clean machine with
+# no network access and no dependency resolution step.
+dependencies = []
+
+[project.optional-dependencies]
+api = ["fastapi>=0.110", "uvicorn>=0.27"]
+dev = ["pytest>=7"]
+
+[project.scripts]
+bayyina = "bayyina.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["bayyina*"]
+
+[tool.setuptools.package-data]
+bayyina = ["assets/*"]

@@ -1,0 +1,18 @@
+{
+  "_note": "SYNTHETIC passive exposure export for the demonstration tender, in the shape of a Censys/Shodan/Rapid7 Open Data extract. Bayyina reads this; it never performs port scanning itself. A buyer would supply its own subscription export or attack-surface inventory here.",
+  "sources": ["passive internet-wide measurement export (synthetic, for demonstration)"],
+  "as_of": "2026-09-02",
+  "hosts": {
+    "meridiangov.example": [
+      {"ip": "203.0.113.20", "port": 443, "transport": "tcp", "service": "https", "product": "Apache httpd 2.4.41"},
+      {"ip": "203.0.113.20", "port": 80, "transport": "tcp", "service": "http", "product": "Apache httpd 2.4.41"},
+      {"ip": "203.0.113.21", "port": 3389, "transport": "tcp", "service": "ms-wbt-server", "product": "Microsoft Terminal Services", "note": "NLA not advertised"},
+      {"ip": "203.0.113.22", "port": 9200, "transport": "tcp", "service": "elasticsearch", "product": "Elasticsearch 6.8.23", "note": "HTTP 200 to unauthenticated GET /"},
+      {"ip": "203.0.113.20", "port": 25, "transport": "tcp", "service": "smtp", "product": "Postfix"}
+    ],
+    "nawrasdigital.example": [
+      {"ip": "198.51.100.44", "port": 443, "transport": "tcp", "service": "https", "product": ""},
+      {"ip": "198.51.100.44", "port": 80, "transport": "tcp", "service": "http", "product": "", "note": "redirects to https"}
+    ]
+  }
+}

@@ -1,0 +1,1088 @@
+{
+  "entries": {
+    "attestation/certifications/meridiangov.example/10f2401ad9": {
+      "collector": "attestation",
+      "data": {
+        "claims": [
+          {
+            "accreditation_body": "UKAS",
+            "certificate_id": "IS-774213",
+            "certification_body": "BSI Group",
+            "covers_delivery_entity": false,
+            "issuer_accredited": true,
+            "registry_lookup": "iaf_certsearch_not_queried",
+            "scope_statement": "The provision of managed IT support services and service desk operations delivered from the Meridian Dubai office, in accordance with the Statement of Applicability version 4.2.",
+            "standard": "ISO/IEC 27001:2022",
+            "valid_until": "2027-03-31",
+            "verdict": "ISSUER_CHECKED"
+          },
+          {
+            "accreditation_body": "AICPA",
+            "certificate_id": "n/a",
+            "certification_body": "Independent CPA firm",
+            "covers_delivery_entity": null,
+            "reason": "SOC 2 is a private AICPA attestation report delivered under NDA. No public registry exists; only the CPA firm can be checked.",
+            "scope_statement": "Security trust services criterion only; report provided under NDA.",
+            "standard": "SOC 2 TYPE II",
+            "valid_until": "2027-01-31",
+            "verdict": "NOT_MACHINE_VERIFIABLE"
+          }
+        ],
+        "public_authorisations": []
+      },
+      "kind": "certifications",
+      "note": "",
+      "observed_at": "2026-09-05T09:00:00+00:00",
+      "source": "claimed certifications cross-checked against accreditation registry",
+      "status": "OBSERVED",
+      "target": "meridiangov.example"
+    },
+    "attestation/certifications/nawrasdigital.example/11bb706cef": {
+      "collector": "attestation",
+      "data": {
+        "claims": [
+          {
+            "accreditation_body": "DAkkS",
+            "certificate_id": "IS-902551",
+            "certification_body": "TUV Rheinland",
+            "covers_delivery_entity": true,
+            "issuer_accredited": true,
+            "registry_lookup": "iaf_certsearch_not_queried",
+            "scope_statement": "Design, development, hosting and operation of cloud-based case management and workflow software, including all delivery and support functions of Nawras Digital DMCC.",
+            "standard": "ISO/IEC 27001:2022",
+            "valid_until": "2028-06-30",
+            "verdict": "ISSUER_CHECKED"
+          },
+          {
+            "accreditation_body": "n/a",
+            "certificate_id": "STAR-L1-NWD-2026",
+            "certification_body": "Cloud Security Alliance (self-assessment)",
+            "covers_delivery_entity": true,
+            "scope_statement": "CAIQ v4 self-assessment published to the public CSA STAR registry.",
+            "standard": "CSA STAR LEVEL 1",
+            "valid_until": "2027-05-14",
+            "verdict": "PUBLICLY_VERIFIED"
+          }
+        ],
+        "public_authorisations": [
+          "CSA STAR LEVEL 1"
+        ]
+      },
+      "kind": "certifications",
+      "note": "",
+      "observed_at": "2026-09-05T09:00:00+00:00",
+      "source": "claimed certifications cross-checked against accreditation registry",
+      "status": "OBSERVED",
+      "target": "nawrasdigital.example"
+    },
+    "attestation/certifications/orionsys.example/af1234044c": {
+      "collector": "attestation",
+      "data": {
+        "claims": [
+          {
+            "accreditation_body": "DAkkS",
+            "certificate_id": "IS-661044",
+            "certification_body": "TUV Rheinland",
+            "covers_delivery_entity": null,
+            "issuer_accredited": true,
+            "registry_lookup": "iaf_certsearch_not_queried",
+            "scope_statement": "Systems integration and application managed services.",
+            "standard": "ISO/IEC 27001:2022",
+            "valid_until": "2028-02-28",
+            "verdict": "ISSUER_CHECKED"
+          }
+        ],
+        "public_authorisations": []
+      },
+      "kind": "certifications",
+      "note": "",
+      "observed_at": "2026-09-05T09:00:00+00:00",
+      "source": "claimed certifications cross-checked against accreditation registry",
+      "status": "OBSERVED",
+      "target": "orionsys.example"
+    },
+    "breach/history/meridiangov.example/c71e6e316c": {
+      "collector": "breach",
+      "data": {
+        "incident_count": 2,
+        "incidents": [
+          {
+            "classes": [
+              "Email addresses",
+              "Names",
+              "Support ticket contents"
+            ],
+            "date": "2024-11-03",
+            "disclosed": "2025-02-18",
+            "domain": "meridiangov.example",
+            "records": 44000,
+            "remediation_evidence": false,
+            "source": "regulator notification register (synthetic)",
+            "third_party_name": "CRM Suite (sub-processor)",
+            "third_party_origin": true,
+            "title": "Customer support platform compromise via third-party CRM integration"
+          },
+          {
+            "classes": [
+              "Email addresses",
+              "Hashed passwords"
+            ],
+            "date": "2023-04-21",
+            "disclosed": "2023-05-09",
+            "domain": "meridiangov.example",
+            "records": 2100,
+            "remediation_evidence": true,
+            "source": "public disclosure (synthetic)",
+            "third_party_origin": false,
+            "title": "Exposed development database snapshot"
+          }
+        ]
+      },
+      "kind": "history",
+      "note": "",
+      "observed_at": "2026-09-05T09:00:00+00:00",
+      "source": "local incident corpus",
+      "status": "OBSERVED",
+      "target": "meridiangov.example"
+    },
+    "breach/history/nawrasdigital.example/20f7ed822f": {
+      "collector": "breach",
+      "data": {
+        "incident_count": 0,
+        "incidents": []
+      },
+      "kind": "history",
+      "note": "",
+      "observed_at": "2026-09-05T09:00:00+00:00",
+      "source": "local incident corpus",
+      "status": "OBSERVED",
+      "target": "nawrasdigital.example"
+    },
+    "breach/history/orionsys.example/79faf1a67a": {
+      "collector": "breach",
+      "data": {},
+      "kind": "history",
+      "note": "No incident corpus entry and the public breach index returned no result for this domain; absence of a record is not evidence of absence of an incident.",
+      "observed_at": "2026-09-05T09:00:00+00:00",
+      "source": "live attempt",
+      "status": "ERROR",
+      "target": "orionsys.example"
+    },
+    "ct/certificates/meridiangov.example/e731b86f6f": {
+      "collector": "ct",
+      "data": {
+        "distinct_issuers": 4,
+        "hostname_count": 47,
+        "hostnames": [
+          "analytics.meridiangov.example",
+          "api-dev.meridiangov.example",
+          "api-uat.meridiangov.example",
+          "api.meridiangov.example",
+          "archive.meridiangov.example",
+          "autodiscover.meridiangov.example",
+          "backup.meridiangov.example",
+          "billing.meridiangov.example",
+          "citrix.meridiangov.example",
+          "crm.meridiangov.example",
+          "db-admin.meridiangov.example",
+          "demo.meridiangov.example",
+          "docker.meridiangov.example",
+          "elastic.meridiangov.example",
+          "files.meridiangov.example",
+          "git.meridiangov.example",
+          "grafana.meridiangov.example",
+          "helpdesk.meridiangov.example",
+          "hr.meridiangov.example",
+          "intranet.meridiangov.example",
+          "invoice.meridiangov.example",
+          "jenkins.meridiangov.example",
+          "k8s.meridiangov.example",
+          "kb.meridiangov.example",
+          "kibana.meridiangov.example",
+          "legacy-portal.meridiangov.example",
+          "mail.meridiangov.example",
+          "meridiangov.example",
+          "monitor.meridiangov.example",
+          "nexus.meridiangov.example",
+          "old.meridiangov.example",
+          "partner.meridiangov.example",
+          "portal.meridiangov.example",
+          "remote.meridiangov.example",
+          "reports.meridiangov.example",
+          "sharepoint.meridiangov.example",
+          "sonar.meridiangov.example",
+          "sso.meridiangov.example",
+          "staging.meridiangov.example",
+          "supplier.meridiangov.example",
+          "support.meridiangov.example",
+          "test.meridiangov.example",
+          "uat.meridiangov.example",
+          "vpn.meridiangov.example",
+          "webmail.meridiangov.example",
+          "wiki.meridiangov.example",
+          "www.meridiangov.example"
+        ],
+        "issuers": {
+          "C=BE, O=GlobalSign nv-sa, CN=GlobalSign RSA OV SSL CA 2018": 17,
+          "C=GB, O=Sectigo Limited, CN=Sectigo RSA DV Secure Server CA": 9,
+          "C=US, O=DigiCert Inc, CN=DigiCert TLS RSA SHA256 2020 CA1": 118,
+          "C=US, O=Let's Encrypt, CN=R11": 46
+        }
+      },
+      "kind": "certificates",
+      "note": "",
+      "observed_at": "2026-09-05T09:00:00+00:00",
+      "source": "https://crt.sh certificate transparency search",
+      "status": "OBSERVED",
+      "target": "meridiangov.example"
+    },
+    "ct/certificates/nawrasdigital.example/052fe2b511": {
+      "collector": "ct",
+      "data": {
+        "distinct_issuers": 1,
+        "hostname_count": 18,
+        "hostnames": [
+          "admin.nawrasdigital.example",
+          "api.nawrasdigital.example",
+          "app.nawrasdigital.example",
+          "backup.nawrasdigital.example",
+          "cdn.nawrasdigital.example",
+          "docs.nawrasdigital.example",
+          "files.nawrasdigital.example",
+          "git.nawrasdigital.example",
+          "id.nawrasdigital.example",
+          "mail.nawrasdigital.example",
+          "monitor.nawrasdigital.example",
+          "nawrasdigital.example",
+          "reports.nawrasdigital.example",
+          "sso.nawrasdigital.example",
+          "staging.nawrasdigital.example",
+          "status.nawrasdigital.example",
+          "vpn.nawrasdigital.example",
+          "www.nawrasdigital.example"
+        ],
+        "issuers": {
+          "C=US, O=Let's Encrypt, CN=R11": 31
+        }
+      },
+      "kind": "certificates",
+      "note": "",
+      "observed_at": "2026-09-05T09:00:00+00:00",
+      "source": "https://crt.sh certificate transparency search",
+      "status": "OBSERVED",
+      "target": "nawrasdigital.example"
+    },
+    "ct/certificates/orionsys.example/5d653dd158": {
+      "collector": "ct",
+      "data": {},
+      "kind": "certificates",
+      "note": "crt.sh query exceeded the 45s timeout; not retried within the assessment window.",
+      "observed_at": "2026-09-05T09:00:00+00:00",
+      "source": "live attempt",
+      "status": "ERROR",
+      "target": "orionsys.example"
+    },
+    "dns_email/a/meridiangov.example/7a6695ff1a": {
+      "collector": "dns_email",
+      "data": {
+        "dnssec_ad_flag": false,
+        "query_type": "A",
+        "rcode": 0,
+        "records": [
+          "203.0.113.20"
+        ]
+      },
+      "kind": "a",
+      "note": "",
+      "observed_at": "2026-09-05T09:00:00+00:00",
+      "source": "dns-over-https (cloudflare-dns.com)",
+      "status": "OBSERVED",
+      "target": "meridiangov.example"
+    },
+    "dns_email/a/nawrasdigital.example/36cffc107b": {
+      "collector": "dns_email",
+      "data": {
+        "dnssec_ad_flag": false,
+        "query_type": "A",
+        "rcode": 0,
+        "records": [
+          "198.51.100.44"
+        ]
+      },
+      "kind": "a",
+      "note": "",
+      "observed_at": "2026-09-05T09:00:00+00:00",
+      "source": "dns-over-https (cloudflare-dns.com)",
+      "status": "OBSERVED",
+      "target": "nawrasdigital.example"
+    },
+    "dns_email/a/orionsys.example/9d9a54857e": {
+      "collector": "dns_email",
+      "data": {
+        "dnssec_ad_flag": false,
+        "query_type": "A",
+        "rcode": 0,
+        "records": [
+          "203.0.113.88"
+        ]
+      },
+      "kind": "a",
+      "note": "",
+      "observed_at": "2026-09-05T09:00:00+00:00",
+      "source": "dns-over-https (cloudflare-dns.com)",
+      "status": "OBSERVED",
+      "target": "orionsys.example"
+    },
+    "dns_email/caa/meridiangov.example/a5b4dd7f88": {
+      "collector": "dns_email",
+      "data": {
+        "dnssec_ad_flag": false,
+        "query_type": "CAA",
+        "rcode": 0,
+        "records": []
+      },
+      "kind": "caa",
+      "note": "",
+      "observed_at": "2026-09-05T09:00:00+00:00",
+      "source": "dns-over-https (cloudflare-dns.com)",
+      "status": "OBSERVED",
+      "target": "meridiangov.example"
+    },
+    "dns_email/caa/nawrasdigital.example/f9b4a0bc5f": {
+      "collector": "dns_email",
+      "data": {
+        "dnssec_ad_flag": false,
+        "query_type": "CAA",
+        "rcode": 0,
+        "records": [
+          "0 issue \"letsencrypt.org\"",
+          "0 iodef \"mailto:security@nawrasdigital.example\""
+        ]
+      },
+      "kind": "caa",
+      "note": "",
+      "observed_at": "2026-09-05T09:00:00+00:00",
+      "source": "dns-over-https (cloudflare-dns.com)",
+      "status": "OBSERVED",
+      "target": "nawrasdigital.example"
+    },
+    "dns_email/caa/orionsys.example/c10b81b055": {
+      "collector": "dns_email",
+      "data": {
+        "dnssec_ad_flag": false,
+        "query_type": "CAA",
+        "rcode": 0,
+        "records": []
+      },
+      "kind": "caa",
+      "note": "",
+      "observed_at": "2026-09-05T09:00:00+00:00",
+      "source": "dns-over-https (cloudflare-dns.com)",
+      "status": "OBSERVED",
+      "target": "orionsys.example"
+    },
+    "dns_email/dmarc/_dmarc.meridiangov.example/81cfcf340b": {
+      "collector": "dns_email",
+      "data": {
+        "dnssec_ad_flag": false,
+        "query_type": "TXT",
+        "rcode": 0,
+        "records": [
+          "v=DMARC1; p=none; rua=mailto:dmarc-reports@meridiangov.example"
+        ]
+      },
+      "kind": "dmarc",
+      "note": "",
+      "observed_at": "2026-09-05T09:00:00+00:00",
+      "source": "dns-over-https (cloudflare-dns.com)",
+      "status": "OBSERVED",
+      "target": "_dmarc.meridiangov.example"
+    },
+    "dns_email/dmarc/_dmarc.nawrasdigital.example/04b6d19860": {
+      "collector": "dns_email",
+      "data": {
+        "dnssec_ad_flag": false,
+        "query_type": "TXT",
+        "rcode": 0,
+        "records": [
+          "v=DMARC1; p=reject; pct=100; adkim=s; aspf=s; rua=mailto:dmarc@nawrasdigital.example"
+        ]
+      },
+      "kind": "dmarc",
+      "note": "",
+      "observed_at": "2026-09-05T09:00:00+00:00",
+      "source": "dns-over-https (cloudflare-dns.com)",
+      "status": "OBSERVED",
+      "target": "_dmarc.nawrasdigital.example"
+    },
+    "dns_email/dmarc/_dmarc.orionsys.example/63b0218ea3": {
+      "collector": "dns_email",
+      "data": {
+        "dnssec_ad_flag": false,
+        "query_type": "TXT",
+        "rcode": 0,
+        "records": [
+          "v=DMARC1; p=quarantine; pct=100; rua=mailto:dmarc@orionsys.example"
+        ]
+      },
+      "kind": "dmarc",
+      "note": "",
+      "observed_at": "2026-09-05T09:00:00+00:00",
+      "source": "dns-over-https (cloudflare-dns.com)",
+      "status": "OBSERVED",
+      "target": "_dmarc.orionsys.example"
+    },
+    "dns_email/dnssec/meridiangov.example/02d80c06c6": {
+      "collector": "dns_email",
+      "data": {
+        "dnssec_ad_flag": false,
+        "query_type": "DS",
+        "rcode": 0,
+        "records": []
+      },
+      "kind": "dnssec",
+      "note": "",
+      "observed_at": "2026-09-05T09:00:00+00:00",
+      "source": "dns-over-https (cloudflare-dns.com)",
+      "status": "OBSERVED",
+      "target": "meridiangov.example"
+    },
+    "dns_email/dnssec/nawrasdigital.example/64db8d4eaa": {
+      "collector": "dns_email",
+      "data": {
+        "dnssec_ad_flag": true,
+        "query_type": "DS",
+        "rcode": 0,
+        "records": [
+          "12345 13 2 9F3A2B1C4D5E6F708192A3B4C5D6E7F8091A2B3C4D5E6F708192A3B4C5D6E7F8"
+        ]
+      },
+      "kind": "dnssec",
+      "note": "",
+      "observed_at": "2026-09-05T09:00:00+00:00",
+      "source": "dns-over-https (cloudflare-dns.com)",
+      "status": "OBSERVED",
+      "target": "nawrasdigital.example"
+    },
+    "dns_email/dnssec/orionsys.example/8c9b670b54": {
+      "collector": "dns_email",
+      "data": {
+        "dnssec_ad_flag": false,
+        "query_type": "DS",
+        "rcode": 0,
+        "records": []
+      },
+      "kind": "dnssec",
+      "note": "",
+      "observed_at": "2026-09-05T09:00:00+00:00",
+      "source": "dns-over-https (cloudflare-dns.com)",
+      "status": "OBSERVED",
+      "target": "orionsys.example"
+    },
+    "dns_email/mta_sts/_mta-sts.meridiangov.example/ca42e5dd05": {
+      "collector": "dns_email",
+      "data": {
+        "dnssec_ad_flag": false,
+        "query_type": "TXT",
+        "rcode": 0,
+        "records": []
+      },
+      "kind": "mta_sts",
+      "note": "",
+      "observed_at": "2026-09-05T09:00:00+00:00",
+      "source": "dns-over-https (cloudflare-dns.com)",
+      "status": "OBSERVED",
+      "target": "_mta-sts.meridiangov.example"
+    },
+    "dns_email/mta_sts/_mta-sts.nawrasdigital.example/e64746b6d8": {
+      "collector": "dns_email",
+      "data": {
+        "dnssec_ad_flag": false,
+        "query_type": "TXT",
+        "rcode": 0,
+        "records": [
+          "v=STSv1; id=20260401120000"
+        ]
+      },
+      "kind": "mta_sts",
+      "note": "",
+      "observed_at": "2026-09-05T09:00:00+00:00",
+      "source": "dns-over-https (cloudflare-dns.com)",
+      "status": "OBSERVED",
+      "target": "_mta-sts.nawrasdigital.example"
+    },
+    "dns_email/mta_sts/_mta-sts.orionsys.example/874d04b015": {
+      "collector": "dns_email",
+      "data": {
+        "dnssec_ad_flag": false,
+        "query_type": "TXT",
+        "rcode": 0,
+        "records": []
+      },
+      "kind": "mta_sts",
+      "note": "",
+      "observed_at": "2026-09-05T09:00:00+00:00",
+      "source": "dns-over-https (cloudflare-dns.com)",
+      "status": "OBSERVED",
+      "target": "_mta-sts.orionsys.example"
+    },
+    "dns_email/mx/meridiangov.example/9aeab9764c": {
+      "collector": "dns_email",
+      "data": {
+        "dnssec_ad_flag": false,
+        "query_type": "MX",
+        "rcode": 0,
+        "records": [
+          "10 mx1.mailguard-cloud.example.",
+          "20 mx2.mailguard-cloud.example."
+        ]
+      },
+      "kind": "mx",
+      "note": "",
+      "observed_at": "2026-09-05T09:00:00+00:00",
+      "source": "dns-over-https (cloudflare-dns.com)",
+      "status": "OBSERVED",
+      "target": "meridiangov.example"
+    },
+    "dns_email/mx/nawrasdigital.example/81c0c1b90d": {
+      "collector": "dns_email",
+      "data": {
+        "dnssec_ad_flag": false,
+        "query_type": "MX",
+        "rcode": 0,
+        "records": [
+          "10 mx.mailfortress.example."
+        ]
+      },
+      "kind": "mx",
+      "note": "",
+      "observed_at": "2026-09-05T09:00:00+00:00",
+      "source": "dns-over-https (cloudflare-dns.com)",
+      "status": "OBSERVED",
+      "target": "nawrasdigital.example"
+    },
+    "dns_email/mx/orionsys.example/7683ebd3e1": {
+      "collector": "dns_email",
+      "data": {
+        "dnssec_ad_flag": false,
+        "query_type": "MX",
+        "rcode": 0,
+        "records": [
+          "10 mx1.mailguard-cloud.example."
+        ]
+      },
+      "kind": "mx",
+      "note": "",
+      "observed_at": "2026-09-05T09:00:00+00:00",
+      "source": "dns-over-https (cloudflare-dns.com)",
+      "status": "OBSERVED",
+      "target": "orionsys.example"
+    },
+    "dns_email/ns/meridiangov.example/1d5c3be1b7": {
+      "collector": "dns_email",
+      "data": {
+        "dnssec_ad_flag": false,
+        "query_type": "NS",
+        "rcode": 0,
+        "records": [
+          "ns1.cloudsecure-dns.example.",
+          "ns2.cloudsecure-dns.example."
+        ]
+      },
+      "kind": "ns",
+      "note": "",
+      "observed_at": "2026-09-05T09:00:00+00:00",
+      "source": "dns-over-https (cloudflare-dns.com)",
+      "status": "OBSERVED",
+      "target": "meridiangov.example"
+    },
+    "dns_email/ns/nawrasdigital.example/c25de74dad": {
+      "collector": "dns_email",
+      "data": {
+        "dnssec_ad_flag": false,
+        "query_type": "NS",
+        "rcode": 0,
+        "records": [
+          "ns1.emirates-dns.example.",
+          "ns2.emirates-dns.example."
+        ]
+      },
+      "kind": "ns",
+      "note": "",
+      "observed_at": "2026-09-05T09:00:00+00:00",
+      "source": "dns-over-https (cloudflare-dns.com)",
+      "status": "OBSERVED",
+      "target": "nawrasdigital.example"
+    },
+    "dns_email/ns/orionsys.example/fb0de204ad": {
+      "collector": "dns_email",
+      "data": {
+        "dnssec_ad_flag": false,
+        "query_type": "NS",
+        "rcode": 0,
+        "records": [
+          "ns1.cloudsecure-dns.example.",
+          "ns2.cloudsecure-dns.example."
+        ]
+      },
+      "kind": "ns",
+      "note": "",
+      "observed_at": "2026-09-05T09:00:00+00:00",
+      "source": "dns-over-https (cloudflare-dns.com)",
+      "status": "OBSERVED",
+      "target": "orionsys.example"
+    },
+    "dns_email/spf/meridiangov.example/da961398c1": {
+      "collector": "dns_email",
+      "data": {
+        "dnssec_ad_flag": false,
+        "query_type": "TXT",
+        "rcode": 0,
+        "records": [
+          "v=spf1 include:_spf.mailguard-cloud.example include:sendgrid.net include:_spf.crm-suite.example include:mail.zendesk.com include:_spf.marketo.example include:spf.protection.outlook.com include:_spf.eventbrite.example include:mailer.hrsuite.example include:_spf.docsign.example include:relay.partner-a.example include:relay.partner-b.example ~all"
+        ]
+      },
+      "kind": "spf",
+      "note": "",
+      "observed_at": "2026-09-05T09:00:00+00:00",
+      "source": "dns-over-https (cloudflare-dns.com)",
+      "status": "OBSERVED",
+      "target": "meridiangov.example"
+    },
+    "dns_email/spf/nawrasdigital.example/cc5a6a913e": {
+      "collector": "dns_email",
+      "data": {
+        "dnssec_ad_flag": false,
+        "query_type": "TXT",
+        "rcode": 0,
+        "records": [
+          "v=spf1 include:_spf.mailfortress.example -all"
+        ]
+      },
+      "kind": "spf",
+      "note": "",
+      "observed_at": "2026-09-05T09:00:00+00:00",
+      "source": "dns-over-https (cloudflare-dns.com)",
+      "status": "OBSERVED",
+      "target": "nawrasdigital.example"
+    },
+    "dns_email/spf/orionsys.example/48a85ebc40": {
+      "collector": "dns_email",
+      "data": {
+        "dnssec_ad_flag": false,
+        "query_type": "TXT",
+        "rcode": 0,
+        "records": [
+          "v=spf1 include:_spf.mailguard-cloud.example include:spf.protection.outlook.com -all"
+        ]
+      },
+      "kind": "spf",
+      "note": "",
+      "observed_at": "2026-09-05T09:00:00+00:00",
+      "source": "dns-over-https (cloudflare-dns.com)",
+      "status": "OBSERVED",
+      "target": "orionsys.example"
+    },
+    "exposure/exposed_services/meridiangov.example/ce954fb104": {
+      "collector": "exposure",
+      "data": {
+        "as_of": "2026-09-02",
+        "high_risk": [
+          {
+            "expected": false,
+            "high_risk": true,
+            "ip": "203.0.113.21",
+            "note": "NLA not advertised",
+            "port": 3389,
+            "product": "Microsoft Terminal Services",
+            "risk_label": "RDP",
+            "service": "ms-wbt-server",
+            "transport": "tcp"
+          },
+          {
+            "expected": false,
+            "high_risk": true,
+            "ip": "203.0.113.22",
+            "note": "HTTP 200 to unauthenticated GET /",
+            "port": 9200,
+            "product": "Elasticsearch 6.8.23",
+            "risk_label": "Elasticsearch HTTP",
+            "service": "elasticsearch",
+            "transport": "tcp"
+          }
+        ],
+        "service_count": 5,
+        "services": [
+          {
+            "expected": true,
+            "high_risk": false,
+            "ip": "203.0.113.20",
+            "port": 443,
+            "product": "Apache httpd 2.4.41",
+            "risk_label": "",
+            "service": "https",
+            "transport": "tcp"
+          },
+          {
+            "expected": true,
+            "high_risk": false,
+            "ip": "203.0.113.20",
+            "port": 80,
+            "product": "Apache httpd 2.4.41",
+            "risk_label": "",
+            "service": "http",
+            "transport": "tcp"
+          },
+          {
+            "expected": false,
+            "high_risk": true,
+            "ip": "203.0.113.21",
+            "note": "NLA not advertised",
+            "port": 3389,
+            "product": "Microsoft Terminal Services",
+            "risk_label": "RDP",
+            "service": "ms-wbt-server",
+            "transport": "tcp"
+          },
+          {
+            "expected": false,
+            "high_risk": true,
+            "ip": "203.0.113.22",
+            "note": "HTTP 200 to unauthenticated GET /",
+            "port": 9200,
+            "product": "Elasticsearch 6.8.23",
+            "risk_label": "Elasticsearch HTTP",
+            "service": "elasticsearch",
+            "transport": "tcp"
+          },
+          {
+            "expected": true,
+            "high_risk": false,
+            "ip": "203.0.113.20",
+            "port": 25,
+            "product": "Postfix",
+            "risk_label": "",
+            "service": "smtp",
+            "transport": "tcp"
+          }
+        ]
+      },
+      "kind": "exposed_services",
+      "note": "",
+      "observed_at": "2026-09-05T09:00:00+00:00",
+      "source": "passive internet-wide measurement export (synthetic, for demonstration)",
+      "status": "OBSERVED",
+      "target": "meridiangov.example"
+    },
+    "exposure/exposed_services/nawrasdigital.example/4695cd6fb4": {
+      "collector": "exposure",
+      "data": {
+        "as_of": "2026-09-02",
+        "high_risk": [],
+        "service_count": 2,
+        "services": [
+          {
+            "expected": true,
+            "high_risk": false,
+            "ip": "198.51.100.44",
+            "port": 443,
+            "product": "",
+            "risk_label": "",
+            "service": "https",
+            "transport": "tcp"
+          },
+          {
+            "expected": true,
+            "high_risk": false,
+            "ip": "198.51.100.44",
+            "note": "redirects to https",
+            "port": 80,
+            "product": "",
+            "risk_label": "",
+            "service": "http",
+            "transport": "tcp"
+          }
+        ]
+      },
+      "kind": "exposed_services",
+      "note": "",
+      "observed_at": "2026-09-05T09:00:00+00:00",
+      "source": "passive internet-wide measurement export (synthetic, for demonstration)",
+      "status": "OBSERVED",
+      "target": "nawrasdigital.example"
+    },
+    "exposure/exposed_services/orionsys.example/9f33d32cbd": {
+      "collector": "exposure",
+      "data": {},
+      "kind": "exposed_services",
+      "note": "No passive exposure dataset covers this domain in the supplied corpus. Bayyina does not port scan, so the exposed-service posture is genuinely unobserved.",
+      "observed_at": "2026-09-05T09:00:00+00:00",
+      "source": "live attempt",
+      "status": "ERROR",
+      "target": "orionsys.example"
+    },
+    "http/headers/meridiangov.example/706334b4ec": {
+      "collector": "http",
+      "data": {
+        "disclosure_headers": {
+          "server": "Apache/2.4.41 (Ubuntu)",
+          "x-powered-by": "PHP/7.4.3"
+        },
+        "edge_headers": [
+          "x-amz-cf-id",
+          "x-amz-cf-pop"
+        ],
+        "final_url": "https://meridiangov.example/",
+        "security_headers": {
+          "content-security-policy": "",
+          "cross-origin-opener-policy": "",
+          "cross-origin-resource-policy": "",
+          "permissions-policy": "",
+          "referrer-policy": "",
+          "strict-transport-security": "",
+          "x-content-type-options": "nosniff",
+          "x-frame-options": "SAMEORIGIN"
+        },
+        "server_header_present": true,
+        "set_cookie": "MERIDIANSESS=8f2a1c; Path=/; Secure",
+        "status": 200
+      },
+      "kind": "headers",
+      "note": "",
+      "observed_at": "2026-09-05T09:00:00+00:00",
+      "source": "HTTPS GET https://meridiangov.example/",
+      "status": "OBSERVED",
+      "target": "meridiangov.example"
+    },
+    "http/headers/nawrasdigital.example/dd60da22a5": {
+      "collector": "http",
+      "data": {
+        "disclosure_headers": {},
+        "edge_headers": [
+          "x-served-by"
+        ],
+        "final_url": "https://nawrasdigital.example/",
+        "security_headers": {
+          "content-security-policy": "default-src 'self'; script-src 'self'; object-src 'none'; frame-ancestors 'none'; base-uri 'self'",
+          "cross-origin-opener-policy": "",
+          "cross-origin-resource-policy": "",
+          "permissions-policy": "geolocation=(), camera=(), microphone=()",
+          "referrer-policy": "strict-origin-when-cross-origin",
+          "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
+          "x-content-type-options": "nosniff",
+          "x-frame-options": "DENY"
+        },
+        "server_header_present": false,
+        "set_cookie": "nd_session=a91f; Path=/; Secure; HttpOnly; SameSite=Strict",
+        "status": 200
+      },
+      "kind": "headers",
+      "note": "",
+      "observed_at": "2026-09-05T09:00:00+00:00",
+      "source": "HTTPS GET https://nawrasdigital.example/",
+      "status": "OBSERVED",
+      "target": "nawrasdigital.example"
+    },
+    "http/headers/orionsys.example/3dd90bd497": {
+      "collector": "http",
+      "data": {
+        "disclosure_headers": {
+          "server": "nginx"
+        },
+        "edge_headers": [
+          "x-amz-cf-id"
+        ],
+        "final_url": "https://orionsys.example/",
+        "security_headers": {
+          "content-security-policy": "default-src 'self' 'unsafe-inline'; img-src *",
+          "cross-origin-opener-policy": "",
+          "cross-origin-resource-policy": "",
+          "permissions-policy": "",
+          "referrer-policy": "",
+          "strict-transport-security": "max-age=15768000",
+          "x-content-type-options": "nosniff",
+          "x-frame-options": "SAMEORIGIN"
+        },
+        "server_header_present": true,
+        "set_cookie": "ORIONID=7c31; Path=/; Secure; HttpOnly",
+        "status": 200
+      },
+      "kind": "headers",
+      "note": "",
+      "observed_at": "2026-09-05T09:00:00+00:00",
+      "source": "HTTPS GET https://orionsys.example/",
+      "status": "OBSERVED",
+      "target": "orionsys.example"
+    },
+    "http/security_txt/meridiangov.example/41bdb9c0d3": {
+      "collector": "http",
+      "data": {
+        "present": false
+      },
+      "kind": "security_txt",
+      "note": "",
+      "observed_at": "2026-09-05T09:00:00+00:00",
+      "source": "HTTPS GET https://meridiangov.example/",
+      "status": "OBSERVED",
+      "target": "meridiangov.example"
+    },
+    "http/security_txt/nawrasdigital.example/2612c72c10": {
+      "collector": "http",
+      "data": {
+        "body": "Contact: mailto:security@nawrasdigital.example\nExpires: 2027-01-01T00:00:00Z\nPreferred-Languages: en, ar\n",
+        "path": "/.well-known/security.txt",
+        "present": true
+      },
+      "kind": "security_txt",
+      "note": "",
+      "observed_at": "2026-09-05T09:00:00+00:00",
+      "source": "HTTPS GET https://nawrasdigital.example/",
+      "status": "OBSERVED",
+      "target": "nawrasdigital.example"
+    },
+    "http/security_txt/orionsys.example/1c5f17f018": {
+      "collector": "http",
+      "data": {},
+      "kind": "security_txt",
+      "note": "Connection timed out after 10s on two attempts.",
+      "observed_at": "2026-09-05T09:00:00+00:00",
+      "source": "live attempt",
+      "status": "ERROR",
+      "target": "orionsys.example"
+    },
+    "tls/tls_config/meridiangov.example/a54adc07e9": {
+      "collector": "tls",
+      "data": {
+        "certificate": {
+          "issuer": {
+            "commonName": "DigiCert TLS RSA SHA256 2020 CA1",
+            "countryName": "US",
+            "organizationName": "DigiCert Inc"
+          },
+          "not_after": "Mar 14 23:59:59 2027 GMT",
+          "not_before": "Jun  8 00:00:00 2026 GMT",
+          "san": [
+            "meridiangov.example",
+            "www.meridiangov.example",
+            "portal.meridiangov.example"
+          ],
+          "serial": "03733702242099976967",
+          "subject": {
+            "commonName": "meridiangov.example"
+          },
+          "version": 3
+        },
+        "cipher": {
+          "bits": 256,
+          "name": "ECDHE-RSA-AES256-GCM-SHA384",
+          "protocol": "TLSv1.2"
+        },
+        "connected": true,
+        "errors": [],
+        "host": "meridiangov.example",
+        "interception_suspected": false,
+        "negotiated": "TLSv1.2",
+        "port": 443,
+        "protocols": {
+          "TLSv1": {
+            "detail": "",
+            "offered": true
+          },
+          "TLSv1.1": {
+            "detail": "",
+            "offered": true
+          },
+          "TLSv1.2": {
+            "detail": "",
+            "offered": true
+          },
+          "TLSv1.3": {
+            "detail": "SSLError",
+            "offered": false
+          }
+        }
+      },
+      "kind": "tls_config",
+      "note": "",
+      "observed_at": "2026-09-05T09:00:00+00:00",
+      "source": "tls handshake (client-conformant, no application data sent)",
+      "status": "OBSERVED",
+      "target": "meridiangov.example"
+    },
+    "tls/tls_config/nawrasdigital.example/d0b3f6f17c": {
+      "collector": "tls",
+      "data": {
+        "certificate": {
+          "issuer": {
+            "commonName": "R11",
+            "countryName": "US",
+            "organizationName": "Let's Encrypt"
+          },
+          "not_after": "Nov 12 12:00:00 2026 GMT",
+          "not_before": "Jun  8 00:00:00 2026 GMT",
+          "san": [
+            "nawrasdigital.example",
+            "www.nawrasdigital.example",
+            "app.nawrasdigital.example"
+          ],
+          "serial": "0584517862974585243",
+          "subject": {
+            "commonName": "nawrasdigital.example"
+          },
+          "version": 3
+        },
+        "cipher": {
+          "bits": 256,
+          "name": "TLS_AES_256_GCM_SHA384",
+          "protocol": "TLSv1.3"
+        },
+        "connected": true,
+        "errors": [],
+        "host": "nawrasdigital.example",
+        "interception_suspected": false,
+        "negotiated": "TLSv1.3",
+        "port": 443,
+        "protocols": {
+          "TLSv1": {
+            "detail": "SSLError",
+            "offered": false
+          },
+          "TLSv1.1": {
+            "detail": "SSLError",
+            "offered": false
+          },
+          "TLSv1.2": {
+            "detail": "",
+            "offered": true
+          },
+          "TLSv1.3": {
+            "detail": "",
+            "offered": true
+          }
+        }
+      },
+      "kind": "tls_config",
+      "note": "",
+      "observed_at": "2026-09-05T09:00:00+00:00",
+      "source": "tls handshake (client-conformant, no application data sent)",
+      "status": "OBSERVED",
+      "target": "nawrasdigital.example"
+    },
+    "tls/tls_config/orionsys.example/929d398d82": {
+      "collector": "tls",
+      "data": {},
+      "kind": "tls_config",
+      "note": "Handshake rejected: the endpoint requires client-certificate authentication (SSLV3_ALERT_HANDSHAKE_FAILURE after certificate request). Protocol versions and server certificate are not observable by an unauthenticated client.",
+      "observed_at": "2026-09-05T09:00:00+00:00",
+      "source": "live attempt",
+      "status": "ERROR",
+      "target": "orionsys.example"
+    }
+  },
+  "meta": {
+    "format": "bayyina-cassette/1",
+    "generator": "scenarios/build_demo.py",
+    "note": "SYNTHETIC demonstration evidence for a fictional tender. Bidder domains are under .example (RFC 2606) and do not resolve. Generated by scenarios/build_demo.py. Replaying this cassette performs no network activity and reproduces the assessment exactly.",
+    "observed_at": "2026-09-05T09:00:00+00:00"
+  }
+}

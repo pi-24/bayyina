@@ -1,0 +1,267 @@
+{
+  "document": "Nawras Digital DMCC — Security Questionnaire Response",
+  "vendor": "nawras",
+  "format": "CAIQ v4 style self-assessment (structured for machine testing)",
+  "submitted": "2026-08-28",
+  "note": "Responses marked with an assertion carry a named predicate that Bayyina can test against externally observable evidence. Responses without one are recorded but cannot be tested from outside.",
+  "responses": [
+    {
+      "id": "Q001",
+      "control_ref": "CAIQ v4 IVS-09",
+      "question": "Are deprecated TLS versions (1.0 and 1.1) disabled on all Internet-facing services?",
+      "answer": "Yes",
+      "assertion": {
+        "predicate": "no_legacy_tls",
+        "value": true
+      }
+    },
+    {
+      "id": "Q002",
+      "control_ref": "CAIQ v4 IVS-10",
+      "question": "Is TLS 1.3 supported on Internet-facing services?",
+      "answer": "Yes",
+      "assertion": {
+        "predicate": "tls13_supported",
+        "value": true
+      }
+    },
+    {
+      "id": "Q003",
+      "control_ref": "CAIQ v4 SEF-08",
+      "question": "Is DMARC published and set to an enforcing policy (quarantine or reject) on your corporate domain?",
+      "answer": "Yes",
+      "assertion": {
+        "predicate": "dmarc_enforced",
+        "value": true
+      }
+    },
+    {
+      "id": "Q004",
+      "control_ref": "CAIQ v4 SEF-09",
+      "question": "Is SPF published with a hard-fail terminator on your corporate domain?",
+      "answer": "Yes",
+      "assertion": {
+        "predicate": "spf_enforced",
+        "value": true
+      }
+    },
+    {
+      "id": "Q005",
+      "control_ref": "CAIQ v4 IVS-11",
+      "question": "Is HTTP Strict Transport Security enforced with a max-age of at least one year?",
+      "answer": "Yes",
+      "assertion": {
+        "predicate": "hsts_enforced",
+        "value": true
+      }
+    },
+    {
+      "id": "Q006",
+      "control_ref": "CAIQ v4 AIS-07",
+      "question": "Is a Content Security Policy enforced on customer-facing web applications?",
+      "answer": "Yes",
+      "assertion": {
+        "predicate": "csp_deployed",
+        "value": true
+      }
+    },
+    {
+      "id": "Q007",
+      "control_ref": "CAIQ v4 IVS-04",
+      "question": "Is DNSSEC enabled on your corporate DNS zone?",
+      "answer": "Yes",
+      "assertion": {
+        "predicate": "dnssec_enabled",
+        "value": true
+      }
+    },
+    {
+      "id": "Q008",
+      "control_ref": "CAIQ v4 CEK-15",
+      "question": "Are CAA records published to restrict which certificate authorities may issue for your domains?",
+      "answer": "Yes",
+      "assertion": {
+        "predicate": "caa_published",
+        "value": true
+      }
+    },
+    {
+      "id": "Q009",
+      "control_ref": "CAIQ v4 SEF-10",
+      "question": "Is MTA-STS published to prevent downgrade of inbound mail transport?",
+      "answer": "Yes",
+      "assertion": {
+        "predicate": "mta_sts_enabled",
+        "value": true
+      }
+    },
+    {
+      "id": "Q010",
+      "control_ref": "CAIQ v4 AIS-09",
+      "question": "Do all session cookies carry the Secure, HttpOnly and SameSite attributes?",
+      "answer": "Yes",
+      "assertion": {
+        "predicate": "cookies_hardened",
+        "value": true
+      }
+    },
+    {
+      "id": "Q011",
+      "control_ref": "CAIQ v4 IVS-13",
+      "question": "Are software product and version identifiers suppressed in HTTP responses?",
+      "answer": "Yes",
+      "assertion": {
+        "predicate": "no_version_disclosure",
+        "value": true
+      }
+    },
+    {
+      "id": "Q012",
+      "control_ref": "CAIQ v4 SEF-02",
+      "question": "Do you publish a vulnerability disclosure contact and policy (RFC 9116)?",
+      "answer": "Yes",
+      "assertion": {
+        "predicate": "vuln_disclosure_published",
+        "value": true
+      }
+    },
+    {
+      "id": "Q013",
+      "control_ref": "CAIQ v4 SEF-01",
+      "question": "Have you been free of any publicly disclosed security incident in the last 36 months?",
+      "answer": "Yes",
+      "assertion": {
+        "predicate": "no_public_breach_36m",
+        "value": true
+      }
+    },
+    {
+      "id": "Q014",
+      "control_ref": "CAIQ v4 STA-09",
+      "question": "Have you been free of any security incident originating with one of your sub-processors?",
+      "answer": "Yes",
+      "assertion": {
+        "predicate": "no_subprocessor_incident",
+        "value": true
+      }
+    },
+    {
+      "id": "Q015",
+      "control_ref": "CAIQ v4 A&A-03",
+      "question": "Does the scope of your ISO/IEC 27001 certification cover the legal entity and services that would deliver this contract?",
+      "answer": "Yes",
+      "assertion": {
+        "predicate": "certification_scope_covers_delivery",
+        "value": true
+      }
+    },
+    {
+      "id": "Q016",
+      "control_ref": "CAIQ v4 IVS-06",
+      "question": "Are administrative and database services (RDP, SSH admin, SQL, Elasticsearch, etc.) prevented from being reachable from the public internet?",
+      "answer": "Yes",
+      "assertion": {
+        "predicate": "no_admin_services_exposed",
+        "value": true
+      }
+    },
+    {
+      "id": "Q017",
+      "control_ref": "CAIQ v4 HRS-02",
+      "question": "Are background verification checks carried out on all personnel with access to customer data?",
+      "answer": "Yes",
+      "assertion": {}
+    },
+    {
+      "id": "Q018",
+      "control_ref": "CAIQ v4 CEK-03",
+      "question": "Are cryptographic keys managed in a dedicated key management system with documented rotation?",
+      "answer": "Yes",
+      "assertion": {}
+    },
+    {
+      "id": "Q019",
+      "control_ref": "CAIQ v4 BCR-08",
+      "question": "Are backup restoration procedures tested at least annually with documented results?",
+      "answer": "Yes",
+      "assertion": {}
+    },
+    {
+      "id": "Q020",
+      "control_ref": "CAIQ v4 AIS-04",
+      "question": "Is a secure development lifecycle applied, including peer code review before release?",
+      "answer": "Yes",
+      "assertion": {}
+    },
+    {
+      "id": "Q021",
+      "control_ref": "CAIQ v4 TVM-06",
+      "question": "Is an independent penetration test performed at least annually by a third party?",
+      "answer": "Yes",
+      "assertion": {}
+    },
+    {
+      "id": "Q022",
+      "control_ref": "CAIQ v4 IAM-09",
+      "question": "Is multi-factor authentication enforced for all privileged and remote administrative access?",
+      "answer": "Yes",
+      "assertion": {}
+    },
+    {
+      "id": "Q023",
+      "control_ref": "CAIQ v4 LOG-05",
+      "question": "Are security logs retained for at least 12 months and protected from modification?",
+      "answer": "Yes",
+      "assertion": {}
+    },
+    {
+      "id": "Q024",
+      "control_ref": "CAIQ v4 DCS-07",
+      "question": "Are data centre facilities protected by documented physical access controls?",
+      "answer": "Yes",
+      "assertion": {}
+    },
+    {
+      "id": "Q025",
+      "control_ref": "CAIQ v4 BCR-02",
+      "question": "Is a business continuity plan documented, with defined RTO and RPO, and exercised annually?",
+      "answer": "Yes",
+      "assertion": {}
+    },
+    {
+      "id": "Q026",
+      "control_ref": "CAIQ v4 DSP-13",
+      "question": "Is customer data stored and processed exclusively within the United Arab Emirates?",
+      "answer": "Yes",
+      "assertion": {}
+    },
+    {
+      "id": "Q027",
+      "control_ref": "CAIQ v4 STA-06",
+      "question": "Are sub-processors subject to prior written approval and equivalent security obligations?",
+      "answer": "Yes",
+      "assertion": {}
+    },
+    {
+      "id": "Q028",
+      "control_ref": "CAIQ v4 CEK-01",
+      "question": "Is customer data encrypted at rest using AES-256 or equivalent?",
+      "answer": "Yes",
+      "assertion": {}
+    },
+    {
+      "id": "Q029",
+      "control_ref": "CAIQ v4 TVM-03",
+      "question": "Are critical vulnerabilities remediated within 15 days of identification?",
+      "answer": "Yes",
+      "assertion": {}
+    },
+    {
+      "id": "Q030",
+      "control_ref": "CAIQ v4 HRS-11",
+      "question": "Do all personnel complete security awareness training on induction and annually?",
+      "answer": "Yes",
+      "assertion": {}
+    }
+  ]
+}

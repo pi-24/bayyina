@@ -1,0 +1,11 @@
+{
+  "_note": "Used only in --mode record/auto. Certification bodies known to be accredited by an IAF MLA signatory. Absence from this list is NOT evidence that a certificate is false: IAF CertSearch coverage is materially incomplete, and DAkkS (Germany's national accreditation body) stated publicly on 15 November 2024 that it does not apply IAF MD 28:2023 in its accreditation procedure. This list is illustrative and would be maintained by the buyer.",
+  "accredited_bodies": [
+    "BSI Group", "TUV Rheinland", "TUV SUD", "TUV NORD", "DNV", "SGS", "Bureau Veritas",
+    "LRQA", "Intertek", "Schellman", "A-LIGN", "DEKRA", "NQA", "URS", "TrustNet",
+    "BM TRADA", "Kiwa", "Alcumus ISOQAR", "QMS International"
+  ],
+  "public_authorisations": {
+    "nawrasdigital.example": ["CSA STAR LEVEL 1"]
+  }
+}
